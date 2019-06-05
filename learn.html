@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>生活类</title>
+
+    <style type="text/css">
+     .fa-star{
+        font-size:35px;
+        color: #ddd;
+        transition: transform 0.5s;
+      }
+    .fa-comment-alt{
+        font-size:30px;
+        color: #ddd;
+        transition: transform 0.5s;
+      }
+    .fa-thumbs-up{
+        font-size:30px;
+        color: #ddd;
+        transition: transform 0.5s;
+      }
+      .like{
+        color: red;
+      }
+      .fa-thumbs-up:active{
+        color: red;
+        transform: scale(1,1);
+        transition: transform 0.1s;
+      }
+      .fa-thumbs-down{
+        font-size: 30px;
+        color: #ddd;
+        transition: transform 0.5s;
+      }
+      .disslike{
+        color: rgb(197, 228, 141);
+      }
+      .fa-thumbs-down:active{
+        color: rgb(197, 228, 141);
+        transform: scale(1,1);
+        transition: transform 0.1s;
+      }
+
+.b1{
+    font-family: 楷体;
+    font-size: 30px;
+}
+.b2{
+    font-family: 宋体;
+    font-size: 20px;
+}
+.b3{
+    font-family: 宋体;
+    font-size: 25px;
+}
+        *{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; overflow-y: auto;
+        }
+        
+                    #wrap{
+                width: 100%;
+                height: auto;
+                border:1px solid ;
+                /* margin: 100px 0; */
+                background: #3764a8;
+            }
+            #content ul{
+                width: 980px;
+                height: 40px;
+                margin: auto;
+                position: relative;
+            }
+            ul li{
+                list-style: none;
+                float: left;
+                position: relative;
+                z-index: 5;
+                /*width: 60px;*/
+                /*text-align: center;*/
+            }
+            ul li a{
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                line-height: 40px;
+                padding: 0 10px;
+                margin-right: 2px;
+            }
+            ul li a:hover{
+                color: rgb(250, 248, 248);
+                text-decoration: none;
+            }
+            #slider{
+                width: 50px;
+                height: 40px;
+                background: rgb(230, 179, 15);
+                position: absolute;
+                top: 0;
+                left: 0;
+                /*opacity: 0.8;*/
+            }
+                </style>
+
+  </head>
+  <body>
+
+<div class="container">
+        <div class="col-md-3 offset-9 col-4 offset-8 mt-3 ">
+                <a href="question.php">发表我的疑惑</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="index.php">返回首页</a>
+              </div>
+    <div class="row form-group mt-2">
+        <!-- <div class="col-md-12 col-12 "> -->
+            <div class="col-md-3  col-7">
+                <img src="image/1.jpg" alt="" >
+            </div> 
+           <div class="input-group input-group-sm col-md-9 col-5 mt-3 ">
+                <input type="text" style="" name="" id=""  class=" form-control">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-warning">搜索</button>
+                </div>
+           </div>
+        <!-- </div> -->
+        </div>
+</div>
+
+<nav class="navbar navbar-dark navbar-expand-md sticky-top fixed-top col-12 ">
+     
+
+    <div id="wrap">
+        <div id = "content">
+                
+                
+            <ul >
+                
+                <div id = "slider" class="navbar-collapse collapse"></div>
+                
+                <button type="button" class=" navbar-toggler" data-toggle="collapse" data-target="#mynav">
+                    <span class=" navbar-toggler-icon"></span>
+                </button>
+                <li style="background: rgb(230, 179, 15);"><a href="###">生活</a></li>
+                <li ><a href="###">情感</a></li>
+                <li ><a href="###">学习</a></li>
+                <li><a href="###">工作</a></li>
+                <li ><a href="###">交际</a></li>
+                <li><a href="###">名站</a></li>
+                <li ><a href="###">反馈</a></li>
+                <li ><a href="###">宝盒</a></li>
+                <li><a href="###">视频</a></li>
+                <li><a href="###">传媒</a></li>
+                <li><a href="###">个性推荐</a></li>
+                <li ><a href="###">网上小瞢</a></li>
+                <li ><a href="###">心灵语录</a></li>
+                <li ><a href="###">励志小故事</a></li>
+                <li ><a href="###">开心一刻</a></li>
+                <li><a href="###">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<hr>
+<div class="container">
+        <b class="b1"> <a href="">有生活困扰？</a> </b><br>
+        <b class="b2">看看别人这么说</b>
+
+    
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/bk6.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>叶落无声</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3  active  float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+
+
+
+
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/37.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>小裤衩</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依赖心好重，有时候身体哪里有点不舒服就会影响到我的心情，现在有份工作，但是已经失去新鲜感没有动力了，是因为仿佛看不到前景，够自己生活，
+                现在的工作的状态是这样的，总希望有人给我指点去做点什么，因为现在这工作岗位让我闲得心虚，万一有什么事情了不知道能不能做得好，岗位是刚刚接手的，交接的时候被他说得挺简单的，但是自己心理总觉得没这么简单，所以一直很郁闷，本人不太喜欢和别人交流，但心情好时除外，不想与别人沟通，因为有时候人家教你东西的时候，表情与语气我都看不惯，我这人很敏感，很想发脾气，但是没办法。。。自己的内心想法与情绪经常得不到发泄。我该如何是好？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/antiaohe.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>肥皂</b>
+         <i class=" float-right">2018-10-17</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大学生最大的毛病就是生物钟混乱了~~~
+                也许由于平时在学校的学习太紧张了，所以放寒假就在家里放松紧张的压力，可以睡个好觉，但却把生物钟颠倒了，要调整好你的生物钟很简单，白天尽量不睡觉，白天打起精神做自己喜欢的事情充实业余生活，晚上按时上床睡觉，哪怕睡不着也要闭目酝酿，听抒情的音乐，睡觉前热水洗脚，这些都会创造一个良好的睡眠氛围，尽量不要用药，自然疗法就可以调整好
+                从理论上讲，生物钟是可以调节的，但是中医临床认为，调生物钟的成功与否因人而异。有一部分易感体质人群，他们不适合做夜班。这些人往往表现为聪明，精神较敏感，工作学习很认真，责任心强，其中女性居多，在中医看来，属于先天体质肝气偏旺，他们是失眠症的易发对象。通过后天的各种努力，他们可以对生物钟做一点改变，但要完全调整成功，则非常艰难。借助药物、保健品等调整，还可能引发抑郁。相对而言，那些做事稀里糊涂，人比较随性开朗的，往往是一觉睡到天亮，调整生物钟相对具备可行性。</div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/bbg.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>回顾騒</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/bg5.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>gio</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/bg2.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>企鹅RIO</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/enterbk.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>过踢</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/logo.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>归属地</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+<div class="container">
+    <div class="mt-3 col-md-12 col-12">
+         <img src="image/bk8.jpg" alt="" class=" rounded" width="3%" height="5%">
+         <b>阿尔</b>
+         <i class=" float-right">2018-10-18</i>
+    </div>
+    <div class="mt-3 col-md-12 col-12">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;也知道平淡是真，但是毕竟还没有结婚，自己一个人平淡也没有什么意义，我想问一下是所有的工作者都这样还是我这样就是很颓废？能给点好的建议或者说下班了可以去干点啥？</p>
+    </div>
+
+    <div class="col-md-12 col-12 mt-3 ">
+            <i class="far fa-comment-alt float-right mr-5"></i>
+            <i class="fas fa-thumbs-down mr-4  float-right"></i>
+            <i class="fas fa-thumbs-up mr-3   float-right"></i>
+            
+    </div>
+
+   
+    
+</div>
+<hr>
+
+
+
+
+
+
+
+<hr>
+<div class=" container">
+        <div class="container mt-3">
+                <b class="b1"> <a href="">生活困扰小积累</a> </b><br>
+                <b class="b2">助你生活愉快</b>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s1.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text" style="height:4em">喝茶以后，杯子里面留下难看的茶渍，用牙膏洗茶渍，非常干净</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right" >查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s2.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                    <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text"style="height:4em">刚刚被蚊子咬完的时候涂上肥皂就不会痒了</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right">查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s3.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                    <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text"style="height:4em">旅行带衣服如果怕压皱可以把没见衣服卷成团</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right" >查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s4.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                    <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text" style="height:4em">炒肉的时候,先把肉用小苏打水浸泡10几分钟,到掉水，再入味,炒出来会很嫩滑</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right" >查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s5.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                    <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text"style="height:4em">眼睛进了小灰尘，闭上眼用力咳嗽几次，眼睛里的灰尘就会自己出来了</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right">查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                             <img src="image/s6.jpg" alt="" class="card-img-top">
+                             <div class="card-body">
+                                    <b class=" card-title b3">生活困扰</b>
+                                <p class=" card-text"style="height:4em">打嗝的时候喝点醋就不会打了，我都是这样，立竿见影</p>
+                                <i class="far fa-star float-right ml-2" ></i>
+                                <button class=" btn btn-secondary float-right" >查看详情</button>
+                             </div>
+                        </div>
+                    </div>
+                
+                    <nav class=" center ml-5">
+                        <ul class="pagination  col-md-12 col-12">
+                          <li class="page-item "><a class="page-link disabled "  style=" color:black">Previous</a></li>
+                          <li class="page-item"><a class="page-link active "  href="#">1</a></li>
+                          <li class="page-item"><a class="page-link " href="#" style=" color:black">2</a></li>
+                          <li class="page-item"><a class="page-link " href="#" style=" color:black">3</a></li>
+                          <li class="page-item"><a class="page-link " href="#" style=" color:black">...</a></li>
+                          <li class="page-item"><a class="page-link " href="#" style=" color:black">Next</a></li>
+                        </ul>
+                      </nav>
+                      
+                    
+                </div>
+</div>
+
+
+
+<footer class="col-md-12 col-12">
+        <div >
+          <img src="image/footer.jpg" alt="" class=" d-block" width="100%">
+        </div>
+</footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+                $("li").mouseenter(function(){
+            $("#slider").animate({
+                left:$(this).offset().left-$('li').eq(0).offset().left,
+            },50)
+            $("#slider").css({		
+                width:$(this).width(),
+            })	
+    
+        })
+        
+        $("ul").mouseleave(function(){
+            $("#slider").css({
+                width:'50',
+            })
+            $("#slider").animate({
+                left:"0",
+            },200)
+        })
+    
+    </script>
+    <script>
+      $(document).ready(function(){
+        $('.fa-thumbs-up').on('click',function(){
+          $(this).toggleClass('like')
+        })
+      })
+    </script>
+
+<script>
+        $(document).ready(function(){
+          $('.fa-thumbs-down').on('click',function(){
+            $(this).toggleClass('disslike')
+          })
+        })
+</script>
+
+  </body>
+</html>

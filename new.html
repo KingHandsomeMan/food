@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>注册页面</title>
+  </head>
+
+<style>
+    body{
+        background: url("image/bbg.jpg") fixed; 
+       height: auto;
+       background-size:cover;
+       width: auto;
+    }
+</style>
+        
+          
+            
+            <script type="text/javascript">
+                function checkinput()
+                {
+                    if(myform.name.value=="")
+                    {
+                        alert("请输入用户名");
+                        myform.name.focus();
+                        return false;
+                    }
+                    if (myform.pwd.value=="")
+                    {
+                        alert("请输入密码");
+                        myform.pwd.focus();
+                        return false;
+                    }
+                    if(myform.pwd.value != myform.pwdcdonfirm.value){
+                        alert("你输入的两次密码不一致，请重新输入！");
+                        myform.pwd.focus();
+                        return false;
+                    }
+                    if (myform.yzm.value=="")
+                    {
+                        alert("请输入验证码");
+                        myform.yzm.focus();
+                        return false;
+                    }
+                }
+            </script>
+      
+        </head>
+        <body>
+            
+        <div class="col-md-3 offset-9 mt-3 col-4 offset-8">
+                <a href="register.html">返回登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="home.html">返回首页</a>
+              </div>
+
+        <form  method="post"  name="myform"  >
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                       <h2 class=" text-center">用户注册</h2><br>
+                  <div class="row form-group">
+                      <div class="col-md-2">
+                         <label for="" >用   户  名：</label>
+                      </div>
+                      <div class="col-md-10 ">
+                      <input type="text" name="name" id="name" class="form-control" >   
+                      </div>
+                 </div>  
+
+                 <div class="row form-group">
+                 <div class="col-md-2">
+                        <label for="" >密　　码: </label>
+                </div>
+                <div class="col-md-10 ">
+                <input type="password" name="pwd" id="pwd" class="form-control">
+                </div>
+            </div>
+
+            <div class="row form-group">
+                    <div class="col-md-2">
+                           <label for="" > 确认密码: </label>
+                   </div>
+                   <div class="col-md-10 ">
+                   <input type="password" name="rpwd" id="pwd" class="form-control">
+                   </div>
+               </div>
+
+               <div class="row form-group col-md-12 offset-5 col-8 offset-4 ">
+                  
+                           <label for="" > 性别</label>
+                  
+                   <div class=" form-check">
+                        <label class=" form-check-inline">  <input type="checkbox" name="" id="" class="form-check-input">
+                        男</label>
+                      
+                        <label class=" form-check-inline" > <input type="checkbox" name="" id="" class="form-check-input">
+                        女</label>
+                   </div>
+               </div>
+
+ 
+               <div class="col-md-12"> <button type="submit" value="注册"  class="btn btn-primary form-control">立即注册</button></div>
+                   
+                    </div>
+                </div>
+            </div>
+        </form>
+       
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+  </body>
+</html>
